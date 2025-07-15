@@ -1,8 +1,8 @@
 let data = {};
 
-function saveDesign() {
-    data.design = document.getElementById('design').value;
-    localStorage.setItem('faturacaoData', JSON.stringify(data));
+function saveDesignAndGo() {
+    saveDesign(); // guarda o design selecionado
+    window.location.href = 'textil.html'; // avança para próxima página
 }
 
 function saveTextil(textil) {
